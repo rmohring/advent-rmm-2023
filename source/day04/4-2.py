@@ -25,12 +25,9 @@ for game_num in range(1, len(games)+1):
             #print(f"Updating: based on {game_num}, incrementing {idx}, iter {j}")
             num_tix[idx] += 1
 
-# for game_num in range(1, len(games)+1):
-#     print("*", game_num, num_tix[game_num], win_value[game_num])
-#     sum += num_tix[game_num] * win_value[game_num]
-
 for x,y in num_tix.items():
     sum += y
+    
 print(sorted(num_tix.items()))
 print(f"Final num cards is: {sum}")
       
