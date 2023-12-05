@@ -1,0 +1,12 @@
+gotten via: 
+for i in outfile*; do grep working $i; done | sort -n > answers.txt
+108956227, from working 1
+194601276, from working 6
+233496066, from working 9
+279420935, from working 3
+315920268, from working 2
+541202251, from working 0
+629695516, from working 7
+682722270, from working 8
+1536448894, from working 4
+1714851112, from working 5
