@@ -1,3 +1,4 @@
+```
 --- Day 5: If You Give A Seed A Fertilizer ---
 
 You take the boat and find the gardener right where you were told he would be: managing a giant "garden" that looks more to you like a farm.
@@ -13,7 +14,7 @@ You barely have time to agree to this request when he brings up another. "While 
 The almanac (your puzzle input) lists all of the seeds that need to be planted. It also lists what type of soil to use with each kind of seed, what type of fertilizer to use with each kind of soil, what type of water to use with each kind of fertilizer, and so on. Every type of seed, soil, fertilizer and so on is identified with a number, but numbers are reused by each category - that is, soil 123 and fertilizer 123 aren't necessarily related to each other.
 
 For example:
-```
+
 seeds: 79 14 55 13
 
 seed-to-soil map:
@@ -47,7 +48,7 @@ temperature-to-humidity map:
 humidity-to-location map:
 60 56 37
 56 93 4
-```
+
 
 The almanac starts by listing which seeds need to be planted: seeds 79, 14, 55, and 13.
 
@@ -57,10 +58,10 @@ Rather than list every source number and its corresponding destination number on
 
 Consider again the example seed-to-soil map:
 
-```
+
 50 98 2
 52 50 48
-```
+
 The first line has a destination range start of 50, a source range start of 98, and a range length of 2. This line means that the source range starts at 98 and contains two values: 98 and 99. The destination range is the same length, but it starts at 50, so its two values are 50 and 51. With this information, you know that seed number 98 corresponds to soil number 50 and that seed number 99 corresponds to soil number 51.
 
 The second line means that the source range starts at 50 and contains 48 values: 50, 51, ..., 96, 97. This corresponds to a destination range starting at 52 and also containing 48 values: 52, 53, ..., 98, 99. So, seed number 53 corresponds to soil number 55.
@@ -69,7 +70,7 @@ Any source numbers that aren't mapped correspond to the same destination number.
 
 So, the entire list of seed numbers and their corresponding soil numbers looks like this:
 
-```
+
 seed  soil
 0     0
 1     1
@@ -83,7 +84,7 @@ seed  soil
 97    99
 98    50
 99    51
-```
+
 
 With this map, you can look up the soil number required for each initial seed number:
 
@@ -107,9 +108,9 @@ Everyone will starve if you only plant such a small number of seeds. Re-reading 
 
 The values on the initial seeds: line come in pairs. Within each pair, the first value is the start of the range and the second value is the length of the range. So, in the first line of the example above:
 
-```
+
 seeds: 79 14 55 13
-```
+
 This line describes two ranges of seed numbers to be planted in the garden. The first range starts with seed number 79 and contains 14 values: 79, 80, ..., 91, 92. The second range starts with seed number 55 and contains 13 values: 55, 56, ..., 66, 67.
 
 Now, rather than considering four seed numbers, you need to consider a total of 27 seed numbers.
@@ -117,3 +118,4 @@ Now, rather than considering four seed numbers, you need to consider a total of 
 In the above example, the lowest location number can be obtained from seed number 82, which corresponds to soil 84, fertilizer 84, water 84, light 77, temperature 45, humidity 46, and location 46. So, the lowest location number is 46.
 
 Consider all of the initial seed numbers listed in the ranges on the first line of the almanac. What is the lowest location number that corresponds to any of the initial seed numbers?
+```
