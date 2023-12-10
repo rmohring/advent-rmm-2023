@@ -1,6 +1,3 @@
-import pandas as pd
-import numpy as np
-
 fh = open("input10-1.dat")
 # fh = open("test.dat")
 
@@ -52,4 +49,4 @@ for i in range(1, 100000):
     step_type = nav[cell]
     step = step_type[from_dir[step]]
 
-print(i, i / 2)
+print(i, "Answer: ", int(i / 2))

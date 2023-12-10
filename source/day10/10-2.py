@@ -1,6 +1,3 @@
-import pandas as pd
-import numpy as np
-
 fh = open("input10-1.dat")
 # fh = open("test2.dat")
 
@@ -92,4 +89,4 @@ for i, row in enumerate(newcells):
     print(f"{i} edges {edge_ctr} inside {inside_ctr}")
     total += inside_ctr
 
-print(total)
+print("Total number of cells bounded:", total)
