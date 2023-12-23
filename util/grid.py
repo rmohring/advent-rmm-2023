@@ -6,11 +6,11 @@ class Gridder:
             self.grid = []
         else:
             if isinstance(data, np.ndarray):
-                self.grid = data        
+                self.grid = data.copy()        
             elif isinstance(data, (list, tuple)):
                 self.grid = np.array(data)
             elif isinstance(data, Gridder):
-                self.grid = data.grid
+                self.grid = data.grid.copy()
             
             if T:
                 self.grid = self.grid.T
