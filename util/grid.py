@@ -41,9 +41,15 @@ class Gridder:
         if self.columnar_build:
             self.grid = self.grid.T
     
+    def integerize(self):
+        self.grid = self.grid.astype(int)
+
     def tolist(self):
         return self.grid.tolist()
-        
+    
+    def val(self, tup):
+        return self.grid[tup[0],tup[1]]
+    
     @property
     def shape(self):
         return self.grid.shape
